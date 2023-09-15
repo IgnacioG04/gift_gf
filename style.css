@@ -13,7 +13,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(https://images.squarespace-cdn.com/content/v1/57e97e6ab8a79be1e7ae0ae6/1583504915770-XA80BF8KQ8ZY2RO71XKK/NGC-4038-39WHAsmall.jpg?format=1500w);
+  background: url('https://images.squarespace-cdn.com/content/v1/57e97e6ab8a79be1e7ae0ae6/1583504915770-XA80BF8KQ8ZY2RO71XKK/NGC-4038-39WHAsmall.jpg?format=1500w');
+  background-size: cover; /* Agregado para asegurar que la imagen de fondo se ajuste al tamaño de la ventana */
 }
 
 .wrapper {
@@ -37,7 +38,6 @@ body {
   margin: 30px 0;
 }
 
-.btn-72,
 .btn-72 *,
 .btn-72 :after,
 .btn-72 :before,
@@ -99,25 +99,31 @@ body {
 
 img {
   width: 150px;
-  text-align: center center;
+  /* No es necesario 'text-align' en las imágenes */
 }
+
 a {
   text-decoration: none;
 }
+
 h1 {
   font-family: 'Pacifico', cursive;
 }
-@media (max-width: 828px){
+
+@media (max-width: 828px) {
   img {
     width: 40%;
-    text-align: center;
-  };
+    /* No es necesario 'text-align' en las imágenes */
+  }
+
   .wrapper {
     width: 240px;
-  };
+  }
+
   .input-box {
     width: 90%;
-  };
+  }
+
   .btn-72 {
     width: 90%;
   }
